@@ -1,0 +1,20 @@
+name:                miso-new-stack
+version:             0.1
+
+dependencies:
+- base >= 4.7 && < 5
+- miso
+- jsaddle
+- jsaddle-warp
+
+executables:
+  miso-new-stack-exe:
+    main:                Main.hs
+    source-dirs:         src
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    default-extensions:
+    - RecordWildCards
+    - OverloadedStrings
